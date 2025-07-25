@@ -1,6 +1,6 @@
 # BAES SDK
 
-A TypeScript SDK for checkpoint saving and loading in games using Pinata IPFS. Players can save their game progress and continue from exactly where they left off on any device.
+baes-sdk is a lightweight typescript SDK for developers building on the BAES ecosystem.
 
 ## Table of Contents
 
