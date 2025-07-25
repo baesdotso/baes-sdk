@@ -1,0 +1,61 @@
+{
+  "name": "baes-sdk",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SDK for checkpoint saving and loading in games using IPFS",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "baes",
+    "sdk",
+    "gaming",
+    "checkpoint",
+    "ipfs",
+    "save",
+    "load",
+    "typescript"
+  ],
+  "author": "BAES App Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baesdotso/baes-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baesdotso/baes-sdk/issues"
+  },
+  "homepage": "https://github.com/baesdotso/baes-sdk#readme",
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}
